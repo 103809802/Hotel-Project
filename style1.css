@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #e82574;
+    --primary-color-dark: #bc1c5c;
+    --text-dark: #0c0a09;
+    --text-light: #78716c;
+    --white : #ffffff;
+    --max-width: 1200px;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
