@@ -42,12 +42,14 @@ p {
 
 .btn {
     display: inline-block;
+    padding: 10px 50px;
     font-size: 18px;
     color: #fff;
     background: #333;
-    padding: 13px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -184,6 +186,7 @@ p {
     margin-bottom: 10px;
 }
 
+
 /* About Info */
 #about-info .info-right {
     float: right;
@@ -259,6 +262,35 @@ p {
 #contact-form textarea:focus {
     border-color: #f7c08a;
     outline: none;
+}
+
+/* Subscriptions */ 
+
+#subscriptions {
+    background: #fff; 
+    padding: 40px 0;
+}
+
+#subscriptions .box {
+    float: left;
+    width: 33.3%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-right: 5px solid #fff;
+    border-left: 5px solid #fff;
+    text-align: left;
+}
+
+#subscriptions .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    color: #333;
+    background-color: rgb(210, 204, 204);
 }
 
 /* Footer */
