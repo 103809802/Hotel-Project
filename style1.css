@@ -293,6 +293,12 @@ p {
     background-color: rgb(210, 204, 204);
 }
 
+/* Choose Membership */
+#choose {
+    text-align: center;
+    padding: 50px;
+}
+
 /* Footer */
 #main-footer {
     text-align: center;

@@ -1,15 +1,22 @@
-const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.querySelector('nav-links');
-const menuBtnIcon = menuBtn.querySelector('i');
+// checkout.js
 
-menuBtn.addEventListener("click", ( ) => {
-    navLinks.classList.toggle("open")
+// Wait until the page content is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  // Read the query parameters from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const plan = urlParams.get("plan");
+  const price = urlParams.get("price");
 
-    const isOpen = navLinks.classList.contains("open");
-    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-});
+  // Display the selected plan and price
+  const planNameEl = document.getElementById("plan-name");
+  const planPriceEl = document.getElementById("plan-price");
 
-navLinks.addEventListener("click", ( ) => { 
-    navLinks.classList.remove("open");
-    menuBtnIcon.setAttribute("class", "ri-menu-line");  
+  if (plan && price) {
+    planNameEl.textContent = plan + " Membership";
+    planPriceEl.textContent = price;
+  } else {
+    // Default if accessed directly
+    planNameEl.textContent = "Basic Membership";
+    planPriceEl.textContent = "19";
+  }
 });
