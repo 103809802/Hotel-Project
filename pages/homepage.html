@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Home Page</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="../frontend/css/style1.css">
     <script src="https://kit.fontawesome.com/650e3dd0f4.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,14 +17,14 @@
             <div class="navbar" id="navbar">
                 <div class="container">
                 <div class="logo">
-                    <h1 class="logo"><a href="homepage.html">HNT</a></h1>
+                    <h1 class="logo"><a href="/pages/homepage.html">HNT</a></h1>
                     <!-- <a href="#"><img src="logo.png" alt="Logo"></a> -->
                      <ul class="navlinks" id="nav-links">
-                        <li><a href="homepage.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a class="current" href="subscriptions.html">Subscriptions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Login</a></li>     
+                        <li><a class="current" href="/pages/homepage.html">Home</a></li>
+                        <li><a href="/pages/about.html">About</a></li>
+                        <li><a href="/pages/subscriptions.html">Subscriptions</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                        <li><a href="/pages/login.html">Login</a></li>     
                     </ul>
                 </div>
 
@@ -46,49 +50,53 @@
             
         </nav>
 
-        <div id="choose">
+        <div id="showcase">
             <div class="container">
-                <div class="choose-content">
-                    <h1> Choose Your <span class="text-primary">Membership</span></h1>
+                <div class="showcase-content">
+                    <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="btn" href="/pages/about.html">About Us</a>
                 </div>
             </div>
         </div>
-
     </header>
 
-    <section id="subscriptions">
-        <div class="box bg-primary">
+    <section id="home-info" class="bg-dark">
+        <div class="info-img"></div>
+        <div class="info-content">
+            <h2><span class="text-primary"> The History</span> Of Our Hotel</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.</p>
+            <a href="/pages/about.html" class="btn btn-light">Read More</a>
+        </div>        
+    </section>
+    
+    
+        <section id="features">
+        <div class="box bg-light">
             <i class="fa-solid fa-hotel fa-3x"></i>
             <h3>Great Location</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, fuga.</p>
-            <a class="btn" href="checkout.html?plan=Basic&price=19"">Join</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure harum necessitatibus iusto dignissimos quibusdam ratione, sit sapiente velit unde minus reprehenderit nobis eum laborum exercitationem adipisci, consequatur quam repudiandae aut libero a maxime dicta. Dicta veniam architecto voluptates iure sunt.</p>
         </div>
 
         <div class="box bg-primary">
             <i class="fa-solid fa-utensils fa-3x"></i>
             <h3>Free Meals</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, fuga.</p>
-            <a class="btn" href="checkout.html?plan=Pro&price=49">Join</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure harum necessitatibus iusto dignissimos quibusdam ratione, sit sapiente velit unde minus reprehenderit nobis eum laborum exercitationem adipisci, consequatur quam repudiandae aut libero a maxime dicta. Dicta veniam architecto voluptates iure sunt.</p>
         </div>
 
-        <div class="box bg-primary">
+        <div class="box bg-light">
             <i class="fa-solid fa-dumbbell fa-3x"></i>
             <h3>Fitness Room</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, fuga.</p>
-            <a class="btn" href="checkout.html?plan=Elite&price=199">Join</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure harum necessitatibus iusto dignissimos quibusdam ratione, sit sapiente velit unde minus reprehenderit nobis eum laborum exercitationem adipisci, consequatur quam repudiandae aut libero a maxime dicta. Dicta veniam architecto voluptates iure sunt.</p>
         </div>
-        <div class="clr"></div> 
     </section>
 
+    <div class="clr"></div>  
     
     <footer id="main-footer">
         <p>Hotel HNT & copy; 2025, All Rights Reserved</p>
     </footer>
-
-    
+    <script src="../frontend/js/homepage.js"></script>
 </body>
 </html>
     

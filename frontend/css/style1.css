@@ -129,7 +129,7 @@ p {
 
 /* Showcase */
 #showcase {
-    background: url('./assets/header.jpg') no-repeat center center/cover;
+    background: url(../assets/header.jpg) no-repeat center center/cover;
     height: 600px;
 }
 
@@ -157,7 +157,7 @@ p {
 #home-info .info-img {
     float: left;
     width: 50%;
-    background: url(./assets/his.png) no-repeat;
+    background: url(../assets/his.png) no-repeat;
     min-height: 100%;
 }
 
@@ -271,14 +271,29 @@ p {
     padding: 40px 0;
 }
 
+.sub-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: start;
+    justify-content: center;   /* centers all the boxes as a group */
+    justify-items: center;     /* centers each box inside its column */
+    gap: 2.5rem;
+    max-width: 1100px;         /* keeps grid from stretching too wide */
+    margin: 0 auto;            /* centers the whole grid in the page */
+    padding: 0 2rem;           /* adds breathing room from page edges */
+}
+
 #subscriptions .box {
-    float: left;
-    width: 33.3%;
-    padding: 40px;
+    width: 100%;               /* let grid control sizing */
+    max-width: 280px;          /* makes each box thinner */
+    padding: 30px;             /* slightly smaller padding */
     box-sizing: border-box;
-    border-right: 5px solid #fff;
-    border-left: 5px solid #fff;
-    text-align: left;
+    border-right: none;        /* remove these thick side borders */
+    border-left: none;
+    border-radius: 10px;
+    background-color: #f5b47a;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 #subscriptions .btn {
@@ -288,9 +303,9 @@ p {
     margin-top: 20px;
 }
 
-.btn:hover {
+#subscriptions .btn:hover {
     color: #333;
-    background-color: rgb(210, 204, 204);
+    background-color: #fff;
 }
 
 /* Choose Membership */
