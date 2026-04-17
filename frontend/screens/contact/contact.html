@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/frontend/css/style1.css">
+    <script src="https://kit.fontawesome.com/650e3dd0f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="navbar" id="navbar">
+        <div class="container">
+        <h1 class="logo"><a href="/frontend/screens/homepage/homepage.html">HNT</a></h1>
+        <ul class="navlinks" id="nav-links">
+            <li><a href="/frontend/screens/homepage/homepage.html">Home</a></li>
+            <li><a href="/frontend/screens/about/about.html">About</a></li>
+            <li><a href="/frontend/screens/subscriptions/subscriptions.html">Subscriptions</a></li>
+            <li><a class="current" href="/frontend/screens/contact/contact.html">Contact</a></li>
+            <li><a href="/frontend/screens/faq/faq.html">FAQ</a></li>
+            <li class="user-menu">
+                <a href="#" onclick="toggleMenu()">duc2k4 ▼</a>
+                <ul id="dropdownMenu" class="dropdown">
+                    <li><a href="/frontend/screens/profile/profile.html">Profile</a></li>
+                    <li><a href="/frontend/screens/mycourses/mycourses.html">My Courses</a></li>
+                    <li><a href="/frontend/screens/login/login.html">Logout</a></li>
+                </ul>   
+            </li>
+        </ul>
+            </div>
+        </div>     
+        </nav>
+    </header>
+
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading"><span class="text-primary">Contact </span> Us</h1>
+            <p>Please fill out the form below to contact us</p>
+            <form action="http://localhost:3000/contact" method="POST" class="contact-input">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <button type="submit" class="btn"> Submit </button>
+            </form>
+        </div>
+    </section>
+
+
+<footer id="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>HNT</h3>
+      <p>Helping you build a career in hospitality with practical, real-world courses.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="/frontend/screens/homepage/homepage.html">Home</a>
+      <a href="/frontend/screens/about/about.html">About</a>
+      <a href="/frontend/screens/subscriptions/subscriptions.html">Subscriptions</a>
+      <a href="/frontend/screens/contact/contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: support@hnt.com</p>
+      <p>Phone: 0123 456 789</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 HNT Hotel Courses. All Rights Reserved.</p>
+  </div>
+</footer>
+    <script src="/frontend/screens/contact/contact.js"></script>
+</body>
+</html>
+    

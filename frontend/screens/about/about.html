@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/frontend/css/style1.css">
+    <script src="https://kit.fontawesome.com/650e3dd0f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="navbar" id="navbar">
+                <div class="container">
+                    <h1 class="logo"><a href="/frontend/screens/homepage/homepage.html">HNT</a></h1>
+                    <ul class="navlinks" id="nav-links">
+                        <li><a href="/frontend/screens/homepage/homepage.html">Home</a></li>
+                        <li><a class="current" href="/frontend/screens/about/about.html">About</a></li>
+                        <li><a href="/frontend/screens/subscriptions/subscriptions.html">Subscriptions</a></li>
+                        <li><a href="/frontend/screens/contact/contact.html">Contact</a></li>
+                        <li><a href="/frontend/screens/faq/faq.html">FAQ</a></li>
+                        <li class="user-menu">
+                            <a href="#" onclick="toggleMenu()">duc2k4 ▼</a>
+                            <ul id="dropdownMenu" class="dropdown">
+                                <li><a href="/frontend/screens/profile/profile.html">Profile</a></li>
+                                <li><a href="/frontend/screens/mycourses/mycourses.html">My Courses</a></li>
+                                <li><a href="/frontend/screens/login/login.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about-info" class="bg-light py-3">
+        <div class="container">
+            <div class="info-left">
+                <h1 class="l-heading"><span class="text-primary">About</span> Me</h1>
+                <p>My name is Thac, I am an ex Hotel Executive Director and a Hospitality Expert, and my objective is to share practical knowledge and real-world experience to help students develop professional skills, understand industry standards, and build successful careers in the hospitality field.</p>
+                <h1 class="l-heading"><span class="text-primary">Professional</span> Experience</h1>
+                <ul>
+                    <li>Vice Director of Operations – Muong Thanh Group (2018–2024): Oversaw hotel operations, service quality, cost efficiency, and staff training.</li>
+                    <li>General Manager – Muong Thanh Luxury Bac Ninh (2016–2018): Led a top-performing 5-star hotel; built strong teams and B2B partnerships.</li>
+                    <li>Director of Accommodation Services – Muong Thanh Group (2013–2015): Managed training and recruitment for Front Office, Housekeeping, and Guest Relations.</li>
+                    <li>Front Office Supervisor – Hanoi Horison, Pullman, Daewoo Hotel (1997–2012): Supervised front office operations at international 5-star hotels.</li>
+                </ul>
+            </div>
+
+            
+            <div class="info-right">
+                <img src="/frontend/assets/teacher.jpg" alt="teacher">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT COURSES SECTION -->
+    <section id="about-courses">
+        <img src="/frontend/assets/asianwoman.png" alt="teacher" id="about-courses-img">
+        <div class="container">
+            <div class="info-left"></div>
+            <div class="info-right">
+                <h1 class="l-heading"><span class="text-primary">Why choose</span> This Course</h1>
+                <ul>
+                    <li>Learn from a former Hotel Executive Director with real industry experience</li>
+                    <li>Practical, real-world knowledge you can apply immediately</li>
+                    <li>Step-by-step guidance for beginners and professionals</li>
+                    <li>Industry-focused training aligned with international hotel standards</li>
+                    <li>Industry-focused training aligned with international hotel standards</li>
+                </ul>
+                <a href="/frontend/screens/subscriptions/subscriptions.html" class="btn btn-light">Join Now</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-3">
+        <div class="container">
+            <h2 class="l-heading">What Our Guests Say</h2>
+            <div class="testimonial bg-primary">
+                <img src="/frontend/assets/person1.jpg" alt="Nick Gurr">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, adipisci nihil porro impedit expedita et commodi, sunt maxime earum consequatur eligendi voluptate facere unde, facilis asperiores praesentium! Quidem asperiores adipisci officiis. Ipsum, in. Voluptatibus unde nulla laudantium sapiente porro obcaecati!</p>
+            </div>
+            <div class="testimonial bg-primary">
+                <img src="/frontend/assets/person2.jpg" alt="Knee Grow">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, adipisci nihil porro impedit expedita et commodi, sunt maxime earum consequatur eligendi voluptate facere unde, facilis asperiores praesentium! Quidem asperiores adipisci officiis. Ipsum, in. Voluptatibus unde nulla laudantium sapiente porro obcaecati!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>HNT</h3>
+      <p>Helping you build a career in hospitality with practical, real-world courses.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="/frontend/screens/homepage/homepage.html">Home</a>
+      <a href="/frontend/screens/about/about.html">About</a>
+      <a href="/frontend/screens/subscriptions/subscriptions.html">Subscriptions</a>
+      <a href="/frontend/screens/contact/contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: support@hnt.com</p>
+      <p>Phone: 0123 456 789</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 HNT Hotel Courses. All Rights Reserved.</p>
+  </div>
+</footer> 
+
+    <script src="/frontend/screens/about/about.js"></script>
+</body>
+</html>

@@ -3,11 +3,14 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
+const path = require('path');
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/frontend', express.static('../frontend'));
+console.log('Serving static from:', path.resolve('../frontend'));
 
 
 mongoose.connect('mongodb://localhost:27017/hotel');
@@ -17,6 +20,7 @@ const UserSchema = new mongoose.Schema({
   email: String,
   password: String
 });
+
 const User = mongoose.model('User', UserSchema);
 
 app.post('/register', async (req, res) => {

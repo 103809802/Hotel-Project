@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/frontend/css/style1.css">
+    <script src="https://kit.fontawesome.com/650e3dd0f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="header">
+    <nav>
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="/frontend/screens/homepage/homepage.html">HNT</a>
+                </h1>
+
+                <ul class="navlinks" id="nav-links">
+                    <li><a class="current" href="/frontend/screens/homepage/homepage.html">Home</a></li>
+
+                    <li><a href="/frontend/screens/about/about.html">About</a></li>
+
+                    <li><a href="/frontend/screens/subscriptions/subscriptions.html">Subscriptions</a></li>
+
+                    <li><a href="/frontend/screens/contact/contact.html">Contact</a></li>
+
+                    <li><a href="/frontend/screens/faq/faq.html">FAQ</a></li>
+
+                    <li class="user-menu">
+                        <a href="#" onclick="toggleMenu()">duc2k4 ▼</a>
+
+                        <ul id="dropdownMenu" class="dropdown">
+                            <li><a href="/frontend/screens/profile/profile.html">Profile</a></li>
+                            <li><a href="/frontend/screens/mycourses/mycourses.html">My Courses</a></li>
+                            <li><a href="/frontend/screens/login/login.html">Logout</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="showcase">
+        <div class="container">
+
+            <div class="showcase-left">
+                <h1>
+                    Unlock Your Potential With<br>
+                    <span class="text-primary">Hospitality Courses</span>
+                </h1>
+
+                <p class="lead">
+                    Welcome to our online course selling website! We offer a wide range of courses to help you develop new skills and advance your career.
+                </p>
+
+                <div class="showcase-buttons">
+                    <a class="btn btn-primary" href="/frontend/screens/about/about.html">About our company</a>
+
+                    <button class="btn-play">
+                        <span>&#9654;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="showcase-right">
+                <div class="shape"></div>
+                <img src="/frontend/assets/fellas.png" alt="hotel girl">
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+
+    <div class="info-content">
+        <h2><span class="text-primary"> Join</span> Our Course</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.
+        </p>
+
+        <a href="/frontend/screens/subscriptions/subscriptions.html" class="btn btn-light">Join Now</a>
+    </div>
+</section>
+
+<section id="features">
+    <div class="box bg-light">
+        <i class="fas fa-medal fa-3x"></i>
+        <h3>Proven Skills</h3>
+        <p>Master real-world hospitality skills that are tested and validated by industry professionals.</p>
+    </div>
+
+    <div class="box bg-primary">
+        <i class="fas fa-chalkboard-teacher fa-3x"></i>
+        <h3>Expert Mentor</h3>
+        <p>Learn directly from professionals with years of experience working in 5-star hotels around the world.</p>
+    </div>
+
+    <div class="box bg-light">
+        <i class="fas fa-mobile-alt fa-3x"></i>
+        <h3>Flexible Learning</h3>
+        <p>Study anytime, anywhere at your own pace with lifetime access to all course materials</p>
+    </div>
+</section>
+
+<div class="clr"></div>
+
+<footer id="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>HNT</h3>
+      <p>Helping you build a career in hospitality with practical, real-world courses.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="/frontend/screens/homepage/homepage.html">Home</a>
+      <a href="/frontend/screens/about/about.html">About</a>
+      <a href="/frontend/screens/subscriptions/subscriptions.html">Subscriptions</a>
+      <a href="/frontend/screens/contact/contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: support@hnt.com</p>
+      <p>Phone: 0123 456 789</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 HNT Hotel Courses. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="/frontend/screens/homepage/homepage.js"></script>
+
+</body>
+</html>
